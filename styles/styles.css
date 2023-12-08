@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url("styles/forms.css");
+
+:root{
+    --cor-primaria: #27374D;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria:  #22D4FD;
+    --cor-hover: #272727;   
+
+    --font-primaria:'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap:80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-secundaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 82px;
+    
+}
+
+.apresentacao__about{
+    height: 70vh;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 82px; 
+}
+
+.apresentacao__infos{
+    height: 70vh;
+    padding: 5.5% 15%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-evenly;
+    gap: 82px;
+    
+}
+
+.apresentacao__forms{
+    height: 56vh;
+    padding: 9% 13%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-evenly;
+    /*gap: 82px;*/
+    
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__infos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.logo__infos{
+    width: 20%;
+    
+}
+
+.logo__texto{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.logo__contato{
+    padding-left: 170px;
+}
+
+
+.apresentacao__conteudo__titulo{
+    font-size: 1.875rem;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao__conteudo__titulo__infos{
+    font-size: 1.125rem;
+    font-family: var(--font-primaria);
+    
+
+}
+
+.apresentacao__conteudo__subtitulo{
+    font-size: 1.2rem;
+    font-family: var(--font-primaria);    
+
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+.titulo2-destaque{
+   color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.125rem;
+    font-family: var(--font-secundaria);
+}
+
+.apresentacao__conteudo__forms{
+    font-size: 1.125rem;
+    font-family: var(--font-secundaria);
+    padding: 2em 0;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+    
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: var(--cor-terciaria); */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 15.5px 0 ;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2%;
+    
+}
+.imagem {
+    width: 42%;
+    /* height: 403px;
+    width: 403px; */
+    
+}
+
+.nome:hover{
+    color:var(--cor-terciaria) ;
+}
+
+.rodape{
+    padding: 15px;
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+@media (max-width: 1374px){
+    .cabecalho{
+        padding: 10%;
+
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    /* .imagem{
+        width: 50%;
+    } */
+
+}
+
+.container__titulo__forms{
+    position: relative;
+    top: 98px;
+}
+
+.container__forms{
+    position: relative;
+    /*padding: 200px;*/
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    /*margin: 0 auto;*/
+    width: 600px;
+    /* Para ver as bordas do formulário */
+    padding: 2em;
+    /*border: 1px solid #ccc;
+    border-radius: 1em;*/
+    font-family: var(--font-secundaria);
+    font-size: 130%;
+    
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+      /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+      display: inline-block;
+      width: 200px;
+      text-align: right;
+      gap: 50px;
+  }
+  
+  input,
+  textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+  
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+  }
+  
+  textarea {
+      /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+      vertical-align: top;
+    
+      /* Para dar espaço suficiente para digitar algum texto */
+      height: 5em;
+    
+      /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+      resize: vertical;
+  }
+  
+  .button {
+      /* Para posicionar os botões para a mesma posição dos campos de texto */
+      padding-left: 111px; /* mesmo tamanho que os elementos do tipo label */
+      
+    }
+    button {
+      /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+      margin-left: 11em;
+      font-family: var(--font-secundaria);
+      font-size: 0.70em;
+}
+
